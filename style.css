@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #1a2233;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    margin: -20px 0 50px;
+    cursor: pointer;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+span{
+    font-size: 12px;
+}
+
+.correo{
+    margin-top: 15px;
+}
+
+a{
+    color: #1a2233;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #2196f3;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, alpha 0.25);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px;
+}
+
+.form-container{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container h1{
+    margin-bottom: 20px;
+}
+
+.social-container{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.social{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.redes{
+    width: 45px;
+    height: 45px;
+}
+
+.social:hover{
+    background-color: #e0e0e0;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.img-container{
+    /* background-color: antiquewhite; */
+    padding-top: 6%;
+    padding-left: 4%;
+}
+
+.imagen{
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        grid-template-columns: 1fr;
+        max-width: 90%;
+    }
+    .imagen{
+        max-width: 100%;
+    }
+}
